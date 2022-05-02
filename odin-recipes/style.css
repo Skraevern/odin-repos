@@ -1,0 +1,22 @@
+.recipe-image {
+  height: 400px;
+  width: auto;
+}
+#odin-image {
+  height: 300px;
+  width: auto;
+}
+body {
+  background-color: lightyellow;
+}
+h1 {
+  font-size: 40px;
+}
+.recipe-index-list {
+  font-size: 22px;
+}
+.recipe-description {
+  font-size: 18px;
+  font-style: italic;
+  
+}
