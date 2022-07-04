@@ -9,14 +9,22 @@
   <body>
     <form action="example.com/path" method="post">
       <input type="text" />
+      <p><br /></p>
+      <p><b>Name input:</b></p>
       <label for="firstName">First Name:</label>
       <input type="text" id="firstName" />
       <label for="first_name">First Name:</label>
-      <input type="text" id="first_name" placeholder="Bob..." />
+      <input
+        type="text"
+        id="first_name"
+        placeholder="Bob..."
+        name="first_name"
+      />
     </form>
+    <p><br /></p>
+
     <form action="" method="post">
-      <label for="first_name">First Name:</label>
-      <input type="text" id="first_name" name="first_name" />
+      <p><b>Email input:</b></p>
       <label for="user_email">Email Address:</label>
       <input
         type="email"
@@ -24,17 +32,36 @@
         name="email"
         placeholder="you@example.com"
       />
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Password input:</b></p>
       <label for="user_password">Password:</label>
       <input type="password" id="user_password" name="password" />
     </form>
+    <p><br /></p>
+
     <form action="" method="post">
+      <p><b>Number input:</b></p>
       <label for="amount">Amount:</label>
       <input type="number" id="amount" name="amount" />
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Date input</b></p>
       <label for="dob">Date of Birth:</label>
       <input type="date" id="dob" name="dob" />
+    </form>
+    <p><br /></p>
+    <form action="" method="post">
+      <p>Text area input:</p>
       <textarea rows="10" cols="60"></textarea>
     </form>
+    <p><br /></p>
     <form action="" method="post">
+      <p><b>Selection inputs:</b></p>
       <select name="Car">
         <option value="mercedes">Mercedes</option>
         <option value="tesla">Tesla</option>
@@ -56,8 +83,11 @@
         </optgroup>
       </select>
     </form>
+    <p><br /></p>
+
     <form action="" method="post">
-      <h1>Ticket Type</h1>
+      <p><b>Radio button input:</b></p>
+      <p>Ticket Type</p>
       <div>
         <input type="radio" id="child" name="ticket_type" value="child" />
         <label for="child">Child</label>
@@ -73,12 +103,14 @@
         />
         <label for="adult">Adult</label>
       </div>
-
       <div>
         <input type="radio" id="senior" name="ticket_type" value="senior" />
         <label for="senior">Senior</label>
       </div>
-      <h1>Pizza Toppings</h1>
+      <p><br /></p>
+
+      <p><b>Checkbox input:</b></p>
+      <p>Pizza Toppings</p>
 
       <div>
         <input type="checkbox" id="sausage" name="topping" value="sausage" />
@@ -112,67 +144,21 @@
     </form>
     <form action="" method="post">
       <div>
-        <h1>Newsletter</h1>
+        <p>Newsletter</p>
         <input type="checkbox" id="newsletter" name="news_letter" checked />
         <label for="newsletter">Send me the news letter</label>
       </div>
     </form>
+    <p><br /></p>
+
     <form action="" method="post">
+      <p><b>Input nuttons:</b></p>
       <button>Click Me</button>
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
       <button type="button">Click to Toggle</button>
-      <fieldset>
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name" />
-
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name" />
-      </fieldset>
-      <fieldset>
-        <legend>Contact Details</legend>
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-
-        <label for="phone_number">Phone Number:</label>
-        <input type="tel" id="phone_number" name="phone_number" />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-      </fieldset>
-
-      <fieldset>
-        <legend>Delivery Details</legend>
-
-        <label for="street_address">Street Address:</label>
-        <input type="text" id="street_address" name="street_address" />
-
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" />
-
-        <label for="zip_code">Zip Code:</label>
-        <input type="text" id="zip_code" name="zip_code" />
-      </fieldset>
-      <fieldset>
-        <legend>What would you like to drink?</legend>
-
-        <div>
-          <input type="radio" name="drink" id="coffee" value="coffee" />
-          <label for="coffee">Coffee</label>
-        </div>
-
-        <div>
-          <input type="radio" name="drink" id="tea" value="tea" />
-          <label for="tea">Tea</label>
-        </div>
-
-        <div>
-          <input type="radio" name="drink" id="soda" value="soda" />
-          <label for="soda">Soda</label>
-        </div>
-      </fieldset>
     </form>
+   
     <h1>MDN Odin-intermediate-HTML-CSS-notes</h1>
     <h2>Your first form</h2>
     <form action="my-first-form" method="post"></form>
