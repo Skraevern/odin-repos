@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <p>Min 6 max 6:</p>
+        <label for="choose">Would you prefer a banana or a cherry?</label>
+        <input
+          type="text"
+          id="choose"
+          name="i_like"
+          required
+          minlength="6"
+          maxlength="6"
+        />
+      </div>
+      <div>
+        <p>Min 1 max 10:</p>
+        <label for="number">How many would you like?</label>
+        <input
+          type="number"
+          id="number"
+          name="amount"
+          value="1"
+          min="1"
+          max="10"
+        />
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+    <script src="" async defer></script>
+  </body>
+</html>
