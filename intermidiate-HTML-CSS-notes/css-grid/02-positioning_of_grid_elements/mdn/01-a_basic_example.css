@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: lightblue;
+  border: 2px solid black;
+}
