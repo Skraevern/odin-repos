@@ -1,3 +1,8 @@
+#each is the granddaddy of the enumerable methods. It’s a bit like Chuck Norris: it can do anything. As you’ll see throughout this lesson, though, just because you can use #each to do just about anything doesn’t mean it’s always the best or most efficient tool for the job.
+
+#Calling #each on an array will iterate through that array and will yield each element to a code block, where a task can be performed:
+
+
 friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
 
 friends.each { |friend| puts "Hello, " + friend }

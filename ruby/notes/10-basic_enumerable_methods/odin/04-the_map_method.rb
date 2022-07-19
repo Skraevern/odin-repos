@@ -1,3 +1,6 @@
+#The #map method (also called #collect) transforms each element from an array according to whatever block you pass to it and returns the transformed elements in a new array. #map may seem confusing at first, but it is extremely useful. We’ll go through several examples and use cases, which should help you understand how and when you can use this enumerable power for good.
+
+
 friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
 
 friends.map { |friend| friend.upcase }
