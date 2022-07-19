@@ -23,15 +23,18 @@
 }
 
 .logo {
+  /* solution */
   justify-self: start;
   align-self: center;
 }
 
 .menu {
+  /* solution */
   align-self: center;
 }
 
 .menu ul {
+  /* solution */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
