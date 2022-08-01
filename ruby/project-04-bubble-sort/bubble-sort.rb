@@ -9,7 +9,6 @@
 def bubble_sort(array)
     array.each_with_index { |num1, i|
         array.each_with_index { |num2, j|
-            
             if  num1 > num2 && j > i
                 num1 = num2
                 tmp = array[i]
@@ -22,5 +21,13 @@ def bubble_sort(array)
 end
 
 array = [4,3,78,2,0,2]
-bubble_sort(array)
-puts array
+large_array = []
+
+10000.times { num = rand(1000000)
+large_array.push(num)
+}
+
+bubble_sort(large_array)
+#large_array = large_array.sort
+puts large_array
+
