@@ -12,11 +12,15 @@ def bubble_sort(array)
             
             if  num1 > num2 && j > i
                 num1 = num2
-                array[i], array[j] = array[j], array[i]
+                tmp = array[i]
+                array[i] = array[j]
+                array[j] = tmp
             end 
         }
      }
-    p array
+    return array
 end
 
-bubble_sort([4,3,78,2,0,2])
+array = [4,3,78,2,0,2]
+bubble_sort(array)
+puts array
