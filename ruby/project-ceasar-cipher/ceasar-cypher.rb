@@ -20,3 +20,4 @@ def caesar_cypher(string, cypher)
 end
 
 caesar_cypher("What a string!", 5)
+#=> Bmfy f xywnsl!
