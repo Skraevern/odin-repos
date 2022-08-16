@@ -1,0 +1,6 @@
+Why learn SQL?
+Relational databases have become so widespread that you're likely using multiple databases per day without even knowing it. Smaller examples include Firefox, which uses SQLite to keep track of the user's history and data, to banking systems which might be using an Oracle database to store daily transactions.
+
+Another way you may have been using SQL is through a programming language, like Python or Ruby. If you've ever done a tutorial with Ruby on Rails, for example, it's likely the code you wrote generated SQL behind the scenes for you. No matter which language you're using, the database and its data will most likely out-live most of the application code in your program.
+
+Creating a well-designed database is like laying the foundations of a house, and learning SQL and relational database concepts will help you build your applications on a strong foundation. Since databases are such a key part of almost all web applications, understanding the language of databases and how they work is a vital step towards becoming a well-rounded web-developer.

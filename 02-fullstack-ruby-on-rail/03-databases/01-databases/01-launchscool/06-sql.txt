@@ -1,0 +1,13 @@
+SQL
+SQL, which stands for Structured Query Language, is the programming language used to communicate with a relational database.
+
+SQL can be pronounced as "Sequel" or as "Ess-Queue-Ell". People can be quite pedantic about which is correct. However it's best to just use whichever helps communicate better by adopting the pronunciation of the people around you.
+
+SQL is a powerful language that uses simple English sentences that, with a few lines, allow you to Select (find), Insert (add), Update (change), and Delete (remove) a large amount of data.
+
+The goal of this book is to teach you SQL, which would allow you to use any of the RDBMS's mentioned above, and even others not mentioned. In order to teach you SQL, we have chosen to use the PostgreSQL RDBMS because of its wide applicability and open source roots. However, after reading this book you should have a foundational understanding of SQL and relational databases, and should have the knowledge to use any relational database of your choosing.
+
+SQL is a little different to other programming languages you may have encountered. SQL is a declarative language; when you write an SQL statement you describe what needs to be done, but not exactly how to do it -- the exact details of how the query is executed are handled internally by the RDBMS you are using.
+
+A brief history of SQL
+SQL dates back to the 1970s where it was conceived of by E. F. Codd in his paper "A relational model for large data banks". The paper laid the foundations for what would become relational databases. You may hear the term 'relational algebra' sometimes used when working with databases. The mathematical models underlying relational databases go beyond the scope of this book, but it's essentially the theory relational databases are built on. Over time, companies saw value in the concepts described by Codd's paper and in the 1970s, many of them began developing the SQL language and producing products called relational databases.

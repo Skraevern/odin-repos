@@ -1,0 +1,8 @@
+Structured Data
+In order to better learn about structured data, it is useful to understand the problem that it aims to solve: the limitations of unstructured data. Unstructured data is data that contains information without any structure, such as content inside emails or books or images.
+
+Storing data in an unstructured way might work if you only have a small amount, but once the amount of data starts to grow it soon becomes unwieldy. For example, if you want to find a particular note you made in a notebook, you may need to look through the entire book to find it. At this point you need a way of organising, or structuring, your data. One way to structure data is to store it in tabular format (rows and columns), such as in spreadsheets or todo lists.
+
+Storing data in a structured way, such as in a table or a spreadsheet, allows us to find the data easily and also to manage it better. The data can be arranged and analyzed in various ways such as sorting alphabetically or totalling a set of values.
+
+A common way of storing data in a structured manner is to use a relational database. A basic definition of a database is simply 'a structured set of data held in a computer'.

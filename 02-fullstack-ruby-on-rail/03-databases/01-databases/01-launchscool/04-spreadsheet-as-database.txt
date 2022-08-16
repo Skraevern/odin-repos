@@ -1,0 +1,22 @@
+Spreadsheet as Database
+Suppose we need to store the name and email of reviewers of a popular website. The simplest approach is to open a spreadsheet, maybe in Google Docs or Microsoft Excel, and enter a few names.
+
+John, joe@contoso.com
+Alice, alice@contoso.com
+
+Now that we have a spreadsheet, we decide to add a header identifying the columns and an id for each user. So our worksheet looks like
+
+Next, we need to add reviews of these users. We don't want to clutter the spreadsheet, so we add a new worksheet.
+
+As you may have noticed, the Users worksheet has three columns named id, username and email and the Reviews worksheet has three columns named id , username and content. Most spreadsheets will use multiple worksheets to organize data. Each worksheet has unique columns that should store one kind (referenced by the column name) of data in it.
+
+The spreadsheet as a whole can be thought of as a database, and the worksheets within the spreadsheet can be used to describe tables within a database. A table contains rows and columns. Each row contains data for one individual. Each column contains data of one specific kind for all of the individuals.
+
+The rows and columns within a worksheet can be seen as analogous to the rows and columns in a table. Each row represents a single set of related data, while the columns represent a standardized way to store data for that particular attribute.
+
+This simplified analogy serves perfectly to describe, conceptually, a database. Keep this analogy in mind as we go forward in the book:
+
+Spreadsheet	Database
+Worksheet	Table
+Worksheet Column	Table Column
+Worksheet Row	Table Record

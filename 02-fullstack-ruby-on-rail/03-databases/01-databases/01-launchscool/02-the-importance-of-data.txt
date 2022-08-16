@@ -1,0 +1,13 @@
+Introduction
+"The more we can organize, find and manage information, the more effectively we can function in our modern world." - Vint Cerf
+
+The importance of data
+As human beings, we are limited in our capacity to remember things. Having tools that allow immediate access and analysis of data enables us to make better decisions.
+
+Today, we have systems that allow a doctor to review the patient's medical record before prescribing a new drug. A bioinformatic scientist can query genome data to find the genetic basis of disease. A baseball scout looking at player statistics can assess the value of a player.
+
+All these decisions can be successfully arrived at by collecting data, organizing it and then studying it to find patterns and meaning. This data has to be stored in a way that lends itself to studying. In other words, we need to structure it.
+
+This is a video by Hans Rosling. By collecting data about 200 countries over 200 years, he provides a perspective on human progress.
+
+https://www.youtube.com/watch?v=jbkSRLYSojo&t=3s

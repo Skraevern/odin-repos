@@ -1,0 +1,4 @@
+Summary
+In this chapter we've looked at the importance of data, and how this importance underpins web applications and web development. We've introduced the concept of structured data by comparison with unstructured data, and explained that databases are a useful way to structure data that you want to work with in a web application. We've talked about how RDBMSs are software applications for managing relational databases, and that SQL is the language that they use to do this.
+
+The focus of this book is on how to use SQL in order to interact with a database. Before we can do that, however, we need to install an RDBMS, specifically PostgreSQL. We'll do that in the next chapter.
