@@ -1,0 +1,19 @@
+Summary
+
+This chapter covered a lot of information about classes, objects and OOP. But you are becoming much more proficient in the language so you are able to digest more and process more complicated material. You are growing as a Ruby programmer. This is where things finally start to get fun.
+
+In this chapter we covered...
+
+Initializing objects with the new method
+How instance variables keep track of an object's state
+Learning how attr_* methods generate getters and setters
+Using instance methods to perform operations on our objects
+Using class methods to perform operations at the class level
+Assigning class variables to relate specifically to our class
+Assigning constants that never change to perform operations in our classes
+How the to_s method is used and that we've been using it implicitly all along.
+How and when to use self
+If you've never seen OOP before, this chapter should've been a doozy, so we need lots of practice to truly understand it. Don't skip the exercises; OOP is a very important piece of foundational knowledge that you'll need to truly understand Ruby code and frameworks, like Rails.
+
+Let's get to some exercises so you can cement this knowledge into your brain and fingers. Then we can move on to the next chapter.
+
