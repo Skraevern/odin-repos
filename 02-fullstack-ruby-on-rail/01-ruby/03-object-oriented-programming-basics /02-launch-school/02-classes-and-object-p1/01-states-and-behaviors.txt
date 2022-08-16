@@ -1,9 +1,0 @@
-States and Behaviors
-
-As we mentioned earlier, we use classes to create objects. When defining a class, we typically focus on two things: states and behaviors. States track attributes for individual objects. Behaviors are what objects are capable of doing.
-
-For example, using our GoodDog class from earlier, we may want to create two GoodDog objects: one named "Fido" and one named "Sparky". They are both GoodDog objects, but may contain different information, such as name, weight, and height. We would use instance variables to track this information. This should tell you that instance variables are scoped at the object (or instance) level, and are how objects keep track of their states.
-
-Even though they're two different objects, both are still objects (or instances) of class GoodDog and contain identical behaviors. For example, both GoodDog objects should be able to bark, run, fetch, and perform other common behaviors of good dogs. We define these behaviors as instance methods in a class. Instance methods defined in a class are available to objects (or instances) of that class.
-
-In summary, instance variables keep track of state, and instance methods expose behavior for objects. Let's take a closer look at how to define them in a class.
