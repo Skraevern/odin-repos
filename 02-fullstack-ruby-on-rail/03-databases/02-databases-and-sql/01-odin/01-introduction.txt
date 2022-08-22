@@ -1,0 +1,12 @@
+Introduction
+Data is the core of any good web app and a good working knowledge of SQL will take you a long way. That knowledge lets you not just understand what’s going on behind the scenes with your ORM tool (e.g. Active Record) but also to feel comfortable asking more complicated questions of your data. And that’s really what SQL is all about – asking questions of your database and occasionally also adding or changing things in it. Querying can be incredibly useful for you.
+
+In more straightforward cases, you might want to display all users who signed up in December via the promotion code “FREESTUFF”. You might want to display all comments created by the current user and sorted by topic and creation date. In more complex cases, you may want to show a list of all the orders shipped to states with more than 1,000 users by quantity and total order value. Or, for internal reasons, you might ask marketing analysis questions like which promotion channels produce users who meet your specified engagement criteria of reading 5 articles per work week.
+
+All of those examples involve you engaging with your database. Luckily, many databases (the ones we’ll be focusing on) speak SQL and luckily SQL really only has a dozen or so words that you’ll consistently use out of a few dozen total. So it’s not a large language, it’s much more about the concepts behind it.
+
+You will start with the questions like the ones above and then have to figure out how to ask them properly of your database, which likely has a bunch of different tables in it. Everyone probably visualizes it a bit differently, but finding a way to visualize what’s going on when you do SQL queries is pretty important. I actually think of Excel tables moving in my head and combining with each other and reshuffling as necessary. To each their own.
+
+We’ll move beyond just the simple SELECT "users".* FROM "users" LIMIT 1 queries and into more dynamic topics like joining tables together, performing calculations on the results, and grouping results together in new ways.
+
+All this stuff is being used by Rails behind the scenes so understanding it will make you much better at writing queries in Rails. This is why we’re going over databases before learning Rails.

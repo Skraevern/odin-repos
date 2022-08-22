@@ -1,0 +1,23 @@
+Using Functions to Aggregate Your Data
+When you run a vanilla SQL query, you often get back a bunch of rows. Sometimes you want to just return a single relevant value that aggregates a column, like the COUNT of posts a user has written. In this case, just use one of the helpful “aggregate” functions offered by SQL (most of which you’d expect to be there – functions like SUM and MIN and MAX etc). You include the function as a part of the SELECT statement, like SELECT MAX(users.age) FROM users. The function will operate on just a single column unless you specify *, which only works for some functions like COUNT (because how would you MAX a column for “name”?).
+
+You often see aliases (AS) used to rename columns or aggregate functions so you can call them by that alias later, e.g. SELECT MAX(users.age) AS highest_age FROM users will return a column called highest_age with the maximum age in it.
+
+Now we’re getting into the fun stuff. Aggregate functions like COUNT which return just a single value for your whole dataset are nice, but they become really useful when you want to use them on very specific chunks of your data and then group them together, e.g. displaying the COUNT of posts for EACH user (as opposed to the count of all posts by all users). That would look like:
+
+  SELECT users.id, users.name, COUNT(posts.id) AS posts_written
+  FROM users
+  JOIN posts ON users.id = posts.user_id
+  GROUP BY users.id;
+See w3 schools and play around with the SQL in the window (try deleting the GROUP BY line) for an interactive visual.
+
+The last nifty trick is if you want to only display a subset of your data. In a normal situation, you’d use a WHERE clause to narrow it down. But if you’ve used an aggregate function like COUNT (say to get the count of posts written for each user in the example above), WHERE won’t work anymore. So to conditionally retrieve records based on aggregate functions, you use the HAVING function, which is essentially the WHERE for aggregates. So say I only want to display users who have written more than 10 posts:
+
+  SELECT users.id, users.name, COUNT(posts.id) AS posts_written
+  FROM users
+  JOIN posts ON users.id = posts.user_id
+  GROUP BY users.id
+  HAVING posts_written >= 10;
+Try going back to the W3 example and joining the Customers and the Orders tables to get the number of orders in each country and adding the line HAVING COUNT(*) > 10; after GROUP BY (and delete the extra semicolon in the previous line).
+
+You probably got lost somewhere in the above explanation and that’s just fine… it’s covering way more stuff than anyone can pick up in 10 minutes. The assigned reading will do a better job of explaining things but, more importantly, you’ll get plenty of opportunities to solidify your understanding by applying it in the project. If you’ve still got blind spots, check out the Additional Resources section below. Fear not and stick with it!
