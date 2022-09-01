@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      p {
+        margin: 24px 0px 16px;
+      }
+
+      img {
+        width: 60px;
+      }
+      .scaleX {
+        transform: scalex(0.25);
+      }
+      .scaleY {
+        transform: scaleY(1.5);
+      }
+      .scaleXY {
+        transform: scale(0.25, 1.5);
+      }
+      .scale {
+        transform: scale(0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Original</p>
+    <img src="odin.png" alt="top logo" />
+
+    <p>0.25 scale on X dimension</p>
+    <img class="scaleX" src="odin.png" alt="top logo" />
+
+    <p>1.5 scale on Y dimension</p>
+    <img class="scaleY" src="odin.png" alt="top logo" />
+
+    <p>Scale by 0.25 and 1.5 on X and Y dimension respectively</p>
+    <img class="scaleXY" src="odin.png" alt="top logo" />
+
+    <p>0.5 scale on both dimensions</p>
+    <img class="scale" src="odin.png" alt="top logo" />
+  </body>
+</html>

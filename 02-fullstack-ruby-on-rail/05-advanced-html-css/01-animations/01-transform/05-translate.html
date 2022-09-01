@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      div {
+        border: 1px solid black;
+        margin-right: auto;
+        padding: 24px;
+      }
+      p {
+        margin: 12px 0 24px;
+      }
+      img {
+        width: 60px;
+      }
+      .translateX {
+        transform: translateX(20px);
+      }
+      .translateY {
+        /* percent values are of the element's width */
+        transform: translateY(-33%);
+      }
+      .translateXY {
+        transform: translate(20px, -33%);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Original</p>
+    <div>
+      <img src="odin.png" alt="top logo" />
+    </div>
+    ​
+    <p>Translate by 20px on X-axis</p>
+    <div>
+      <img class="translateX" src="odin.png" alt="top logo" />
+    </div>
+    ​
+    <p>Translate by -33% on Y-axis</p>
+    <div>
+      <img class="translateY" src="odin.png" alt="top logo" />
+    </div>
+    ​
+    <p>Translate by 20px and -33% on X and Y axes respectively</p>
+    <div>
+      <img class="translateXY" src="odin.png" alt="top logo" />
+    </div>
+  </body>
+</html>

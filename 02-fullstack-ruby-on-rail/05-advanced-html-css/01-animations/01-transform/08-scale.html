@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      img {
+        width: 60px;
+      }
+      div,
+      * + p {
+        margin-top: 1.5rem;
+      }
+      .scaleZ {
+        transform: scaleZ(1.5);
+      }
+      .scale3D {
+        transform: scale3d(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Original</p>
+    <img src="odin.png" alt="top logo" />
+
+    <p>Scale Z</p>
+    <img class="scaleZ" src="odin.png" alt="top logo" />
+
+    <p>Scale 3D</p>
+    <img class="scale3D" src="odin.png" alt="top logo" />
+  </body>
+</html>

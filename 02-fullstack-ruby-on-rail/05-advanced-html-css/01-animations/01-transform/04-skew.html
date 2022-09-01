@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      p {
+        margin: 0;
+      }
+      div {
+        background: #cc9543;
+        width: 50px;
+        height: 50px;
+      }
+      div,
+      * + p {
+        margin-top: 1.5rem;
+      }
+      .skewX {
+        transform: skewX(45deg);
+      }
+      .skewY {
+        transform: skewY(-0.5rad);
+      }
+      .skewXY {
+        transform: skew(45deg, -0.5rad);
+      }
+      .skew {
+        /* single value behaves the same as skewX */
+        transform: skew(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Original</p>
+    <div></div>
+
+    <p>Skew 45 degrees on X-axis</p>
+    <div class="skewX"></div>
+
+    <p>Skew -0.5 radian on Y-axis</p>
+    <div class="skewY"></div>
+
+    <p>Skew 45 degrees and -0.5 radian on X and Y axes respectively</p>
+    <div class="skewXY"></div>
+
+    <p>Skew 45 degrees on X-axis (single value in function)</p>
+    <div class="skew"></div>
+  </body>
+</html>
