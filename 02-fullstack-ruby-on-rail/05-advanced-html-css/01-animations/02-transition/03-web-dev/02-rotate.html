@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 30px;
+      }
+      .frame {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 300px;
+        margin-top: 30px;
+        border: solid 2px darkgray;
+      }
+      .box {
+        width: 80px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 10px;
+      }
+      .animate {
+        animation: rotate 0.7s ease-in-out both;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Animate</button>
+    <div class="frame">
+      <div class="box" id="box"></div>
+    </div>
+    <script>
+      const btn = document.getElementById("btn");
+      const box = document.getElementById("box");
+
+      const animate = () => {
+        box.classList.add("animate");
+        setTimeout(function () {
+          box.classList.remove("animate");
+        }, 1000);
+      };
+
+      btn.onclick = animate;
+    </script>
+  </body>
+</html>
