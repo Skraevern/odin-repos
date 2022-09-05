@@ -1,0 +1,22 @@
+Defining transitions
+CSS Transitions are controlled using the shorthand transition property. This is the best way to configure transitions, as it makes it easier to avoid out of sync parameters, which can be very frustrating to have to spend lots of time debugging in CSS.
+
+You can control the individual components of the transition with the following sub-properties:
+
+transition-property
+Specifies the name or names of the CSS properties to which transitions should be applied. Only properties listed here are animated during transitions; changes to all other properties occur instantaneously as usual.
+
+transition-duration
+Specifies the duration over which transitions should occur. You can specify a single duration that applies to all properties during the transition, or multiple values to allow each property to transition over a different period of time.
+
+transition-timing-function
+Specifies a function to define how intermediate values for properties are computed. Timing functions determine how intermediate values of the transition are calculated. Most timing functions can be specified by providing the graph of the corresponding function, as defined by four points defining a cubic bezier. You can also choose easing from Easing Functions Cheat Sheet.
+
+transition-delay
+Defines how long to wait between the time a property is changed and the transition actually begins.
+
+The transition shorthand CSS syntax is written as follows:
+
+div {
+    transition: <property> <duration> <timing-function> <delay>;
+}
