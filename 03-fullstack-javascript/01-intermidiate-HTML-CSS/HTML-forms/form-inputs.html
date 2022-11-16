@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin-intermediate-HTML-CSS-notes</title>
+  </head>
+  <body>
+    <form action="example.com/path" method="post">
+      <input type="text" />
+      <p><br /></p>
+      <p><b>Name input:</b></p>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" />
+      <label for="first_name">First Name:</label>
+      <input
+        type="text"
+        id="first_name"
+        placeholder="Bob..."
+        name="first_name"
+      />
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Email input:</b></p>
+      <label for="user_email">Email Address:</label>
+      <input
+        type="email"
+        id="user_email"
+        name="email"
+        placeholder="you@example.com"
+      />
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Password input:</b></p>
+      <label for="user_password">Password:</label>
+      <input type="password" id="user_password" name="password" />
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Number input:</b></p>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" />
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Date input</b></p>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" />
+    </form>
+    <p><br /></p>
+    <form action="" method="post">
+      <p>Text area input:</p>
+      <textarea rows="10" cols="60"></textarea>
+    </form>
+    <p><br /></p>
+    <form action="" method="post">
+      <p><b>Selection inputs:</b></p>
+      <select name="Car">
+        <option value="mercedes">Mercedes</option>
+        <option value="tesla">Tesla</option>
+        <option value="volvo" selected>Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="mini">Mini</option>
+        <option value="ford">Ford</option>
+      </select>
+      <select name="fashion">
+        <optgroup label="Clothing">
+          <option value="t_shirt">T-Shirts</option>
+          <option value="sweater">Sweaters</option>
+          <option value="coats">Coats</option>
+        </optgroup>
+        <optgroup label="Foot Wear">
+          <option value="sneakers">Sneakers</option>
+          <option value="boots">Boots</option>
+          <option value="sandals">Sandals</option>
+        </optgroup>
+      </select>
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Radio button input:</b></p>
+      <p>Ticket Type</p>
+      <div>
+        <input type="radio" id="child" name="ticket_type" value="child" />
+        <label for="child">Child</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          id="adult"
+          name="ticket_type"
+          value="adult"
+          checked
+        />
+        <label for="adult">Adult</label>
+      </div>
+      <div>
+        <input type="radio" id="senior" name="ticket_type" value="senior" />
+        <label for="senior">Senior</label>
+      </div>
+      <p><br /></p>
+
+      <p><b>Checkbox input:</b></p>
+      <p>Pizza Toppings</p>
+
+      <div>
+        <input type="checkbox" id="sausage" name="topping" value="sausage" />
+        <label for="sausage">Sausage</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="onions" name="topping" value="onions" />
+        <label for="onions">Onions</label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="pepperoni"
+          name="topping"
+          value="pepperoni"
+        />
+        <label for="pepperoni">Pepperoni</label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="mushrooms"
+          name="topping"
+          value="mushrooms"
+        />
+        <label for="mushrooms">Mushrooms</label>
+      </div>
+    </form>
+    <form action="" method="post">
+      <div>
+        <p>Newsletter</p>
+        <input type="checkbox" id="newsletter" name="news_letter" checked />
+        <label for="newsletter">Send me the news letter</label>
+      </div>
+    </form>
+    <p><br /></p>
+
+    <form action="" method="post">
+      <p><b>Input nuttons:</b></p>
+      <button>Click Me</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Click to Toggle</button>
+    </form>
+   
+    <h1>MDN Odin-intermediate-HTML-CSS-notes</h1>
+    <h2>Your first form</h2>
+    <form action="my-first-form" method="post"></form>
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Name" />
+      </li>
+      <li>
+        <label for="name">Email</label>
+        <input
+          type="text"
+          id="mail"
+          name="user-mail"
+          placeholder="user@email.com"
+        />
+      </li>
+      <li>
+        <label for="msg">Message</label
+        ><textarea
+          name="msg"
+          id="msg"
+          name="user-message"
+          placeholder="Your text here!"
+        ></textarea>
+      </li>
+    </ul>
+  </body>
+</html>

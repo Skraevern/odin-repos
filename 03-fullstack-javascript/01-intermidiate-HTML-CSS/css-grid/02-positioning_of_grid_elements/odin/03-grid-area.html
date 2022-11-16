@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="03-grid-area.css" />
+  </head>
+  <body>
+    <p>
+      Grid area 1: grid-row-start / grid-column-start / grid-row-end /
+      grid-column-end <br />
+      ex. #livin-room { grid-area: 1 / 1 / 3 / 6; }
+    </p>
+    <div class="container">
+      <div class="room" id="living-room">Living Room</div>
+      <div class="room" id="kitchen">Kitchen</div>
+      <div class="room" id="bedroom">Bedroom</div>
+      <div class="room" id="bathroom">Bathroom</div>
+      <div class="room" id="closet">Closet</div>
+    </div>
+    <p>
+      Grid area 2: grid-template-areas: <br />
+      .container { <br />
+      grid-area: "living-room living-room living-room living-room living-room"
+      "living-room living-room living-room living-room living-room" "bedroom
+      bedroom bathroom kitchen kitchen" "bedroom bedroom bathroom kitchen
+      kitchen" "closet closet . . ."; <br />
+      } <br />
+      #living-room2 { <br />
+      grid-area: living-room; <br />
+      }
+    </p>
+    <div class="container">
+      <div class="room" id="living-room2">Living Room</div>
+      <div class="room" id="kitchen2">Kitchen</div>
+      <div class="room" id="bedroom2">Bedroom</div>
+      <div class="room" id="bathroom2">Bathroom</div>
+      <div class="room" id="closet2">Closet</div>
+    </div>
+  </body>
+</html>
