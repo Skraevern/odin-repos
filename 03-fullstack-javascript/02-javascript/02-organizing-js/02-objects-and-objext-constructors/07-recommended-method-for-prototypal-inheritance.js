@@ -1,0 +1,2 @@
+// Recommended Method for Prototypal Inheritance
+// So far you have seen several ways of making an object inherit the prototype from another object. At this point in history, the recommended way of setting the prototype of an object is Object.create (here is the documentation for that method). Object.create very simply returns a new object with the specified prototype and any additional properties you want to add. For our purposes, you use it like so:
