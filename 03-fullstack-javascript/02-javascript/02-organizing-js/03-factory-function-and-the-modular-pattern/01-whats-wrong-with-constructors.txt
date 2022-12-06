@@ -1,0 +1,25 @@
+What’s wrong with constructors?
+
+Object constructors are one of about a million ways to start organizing your code. They are fairly common in the wild and are a fundamental building block of the JavaScript language.
+
+However…
+
+There are many people who argue against using constructors at all. Their arguments boil down to the fact that if you aren’t careful, it can be easy to introduce bugs into your code when using constructors. This article does a pretty decent job of outlining the issues (spoiler alert: the author ends up recommending factory functions).
+
+One of the biggest issues with constructors is that while they look just like regular functions, they do not behave like regular functions at all. If you try to use a constructor function without the new keyword, your program will not work as expected, but it won’t produce error messages that are easy to trace.
+
+The main takeaway is that while constructors aren’t necessarily evil, they aren’t the only way, and they may not be the best way either. Of course, this doesn’t mean that time learning about them was wasted! They are a common pattern in real-world code and many tutorials that you’ll come across on the net.
+
+Lesson Overview
+
+This section contains a general overview of topics that you will learn in this lesson.
+
+Describe common bugs you might run into using constructors.
+How to write a factory method that returns an object.
+Explain how scope works in JavaScript (bonus points if you can point out what ES6 changed!).
+Explain what Closure is and how it impacts private functions & variables.
+Describe how private functions & variables are useful.
+Use inheritance in objects using the factory pattern.
+Explain the module pattern.
+Describe IIFE. What does it stand for?
+Briefly explain namespacing and how it’s useful.
